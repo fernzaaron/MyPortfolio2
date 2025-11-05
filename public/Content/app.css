@@ -1,0 +1,57 @@
+/* small layout tweaks to reduce excess whitespace and improve page look */
+html, body {
+	height: 100%;
+}
+body {
+	/* slightly tighter vertical rhythm */
+	padding-top: 0;
+	padding-bottom: 0;
+	background: #ffffff;
+	color: #222;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+main.container {
+	max-width: 980px;
+}
+
+/* Reduce default margins for headings inside main content */
+main h1, main h2, main h3, main h4 {
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Tighter paragraphs */
+main p {
+	margin-bottom: 0.75rem;
+	line-height: 1.5;
+}
+
+.aboutmetitle, .videotitle {
+	font-weight: 600;
+}
+
+/* Project card tweaks */
+.card { 
+	border: 1px solid #e9ecef;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+/* Make images not too large on small screens */
+.img-fluid { max-width: 100%; height: auto; }
+
+/* Small utility to reduce large jumbotron spacing if present */
+.jumbotron { padding-top: 1rem; padding-bottom: 1rem; margin-bottom: 1rem; }
+
+/* Footer spacing */
+footer { padding: 1rem 0; }
+
+/* Form card */
+.card .form-label { font-weight: 500; }
+
+/* Small screens: reduce container padding for more content area */
+@media (max-width: 576px) {
+	main.container { padding-left: 1rem; padding-right: 1rem; }
+}
+
+/* End of custom CSS tweaks */
