@@ -1,4 +1,5 @@
 /* small layout tweaks to reduce excess whitespace and improve page look */
+/* tweaked margins and container width to make pages look less empty */
 html, body {
 	height: 100%;
 }
@@ -31,10 +32,11 @@ main p {
 	font-weight: 600;
 }
 
-/* Project card tweaks */
+/* project card tweaks */
 .card { 
-	border: 1px solid #e9ecef;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+ 	/* slight border and shadow so cards stand out */
+ 	border: 1px solid #e9ecef;
+ 	box-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }
 
 /* Make images not too large on small screens */
@@ -53,5 +55,3 @@ footer { padding: 1rem 0; }
 @media (max-width: 576px) {
 	main.container { padding-left: 1rem; padding-right: 1rem; }
 }
-
-/* End of custom CSS tweaks */

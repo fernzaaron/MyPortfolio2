@@ -2,10 +2,11 @@
 <%- include('partials/main_nav') %>
 
 <main class="container py-4">
-  <div class="row">
-    <div class="col-md-8 mx-auto">
-      <h2 class="text-center mb-3">Contact Me</h2>
-      <form class="card p-3">
+  <!-- simplified wrapper: removed extra .row to keep markup flatter but layout same -->
+  <div class="col-md-8 mx-auto">
+  <h2 class="text-center mb-3">Contact Me</h2>
+  <!-- simple contact form -->
+  <form class="card p-3">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" id="name" name="name" class="form-control" required>
@@ -31,7 +32,6 @@
         </div>
       </form>
     </div>
-  </div>
 </main>
 
 <%- include('partials/bottom_nav') %>
